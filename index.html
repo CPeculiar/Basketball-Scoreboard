@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet"> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-main">
+            <div class="contain1">
+                <h3 id="home">HOME</h3>
+                <div id="scoreboard1">
+                    <h3 class="number" id="homeScreen">0</h3>
+                </div>
+                <div class="opContainer">
+                    <button class="add" onclick="count1()">
+                        <p class="incrementBtn">+1</p>
+                    </button>
+                    <button class="add">
+                        <p class="incrementBtn" onclick="count2()">+2</p>
+                    </button>
+                    <button class="add">
+                        <p class="incrementBtn" onclick="count3()">+3</p>
+                    </button>
+                </div>
+            </div>
+            <div class="contain1">
+                <h3 id="guest">GUEST</h3>
+                <div id="scoreboard1">
+                    <h3 class="number" id="guestScreen">0</h3>
+                </div>
+                <div class="opContainer">
+                    <button class="add">
+                        <p class="incrementBtn" onclick="count4()">+1</p>
+                    </button>
+                    <button class="add">
+                        <p class="incrementBtn" onclick="count5()">+2</p>
+                    </button>
+                    <button class="add">
+                        <p class="incrementBtn" onclick="count6()">+3</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="winContainBtn">
+            
+                <button class="winnerBtn">
+                    <p id="winnerPar">The Winner is: <span id="declare"></span> </p>
+                </button>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
